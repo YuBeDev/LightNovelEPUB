@@ -1,0 +1,14 @@
+D:\Dev\VS\Light Novel EPUB\Light Novel EPUB\bin\Debug\Light Novel EPUB.exe.config
+D:\Dev\VS\Light Novel EPUB\Light Novel EPUB\bin\Debug\Light Novel EPUB.exe
+D:\Dev\VS\Light Novel EPUB\Light Novel EPUB\bin\Debug\Light Novel EPUB.pdb
+D:\Dev\VS\Light Novel EPUB\Light Novel EPUB\obj\Debug\Light Novel EPUB.csproj.AssemblyReference.cache
+D:\Dev\VS\Light Novel EPUB\Light Novel EPUB\obj\Debug\Light Novel EPUB.csproj.SuggestedBindingRedirects.cache
+D:\Dev\VS\Light Novel EPUB\Light Novel EPUB\obj\Debug\Light_Novel_EPUB.Properties.Resources.resources
+D:\Dev\VS\Light Novel EPUB\Light Novel EPUB\obj\Debug\Light Novel EPUB.csproj.GenerateResource.cache
+D:\Dev\VS\Light Novel EPUB\Light Novel EPUB\obj\Debug\Light Novel EPUB.csproj.CoreCompileInputs.cache
+D:\Dev\VS\Light Novel EPUB\Light Novel EPUB\obj\Debug\Light Novel EPUB.exe
+D:\Dev\VS\Light Novel EPUB\Light Novel EPUB\obj\Debug\Light Novel EPUB.pdb
+D:\Dev\VS\Light Novel EPUB\Light Novel EPUB\obj\Debug\Light_Novel_EPUB.Form1.resources
+D:\Dev\VS\Light Novel EPUB\Light Novel EPUB\bin\Debug\Newtonsoft.Json.dll
+D:\Dev\VS\Light Novel EPUB\Light Novel EPUB\bin\Debug\Newtonsoft.Json.xml
+D:\Dev\VS\Light Novel EPUB\Light Novel EPUB\obj\Debug\Light Novel EPUB.csproj.CopyComplete

@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json.Linq;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Data;
 using System.Drawing;
@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using System.Xml;
 using System.IO.Compression;
 using System.Net;
+using System.Web;
 
 namespace Light_Novel_EPUB
 {
@@ -381,7 +382,7 @@ namespace Light_Novel_EPUB
         {
 
             string chapterIndex = token["chapter_index"].ToString();
-            string chapterName = token["chapter_name"].ToString();
+            string chapterName = HttpUtility.HtmlEncode(token["chapter_name"].ToString());
             string chapterId = token["id"].ToString();
             string chapterFileName = "";
 

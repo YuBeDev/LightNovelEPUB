@@ -117,7 +117,12 @@ namespace Light_Novel_EPUB
 
                 string novelName = title.Text;
                 string novelDescription = description.Text;
-                string epubLocation = Path.Combine(saveFolder.Text, novelName + ".epub");
+
+                string fileName = novelName;
+                foreach (char c in Path.GetInvalidFileNameChars())
+                    fileName = fileName.Replace(c, '_');
+
+                string epubLocation = Path.Combine(saveFolder.Text, fileName + ".epub");
                 string novelGuid = Guid.NewGuid().ToString();
 
                 if (File.Exists(epubLocation))

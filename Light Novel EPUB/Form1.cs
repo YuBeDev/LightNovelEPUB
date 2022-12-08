@@ -1,4 +1,4 @@
-using Newtonsoft.Json.Linq;
+﻿using Newtonsoft.Json.Linq;
 using System;
 using System.Data;
 using System.Drawing;
@@ -39,7 +39,7 @@ namespace Light_Novel_EPUB
             saveFolder.Text = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             folderBrowserDialog1.SelectedPath = saveFolder.Text;
 
-            log.Text = "Enter full novel url (e.g. https://lightnovels.me/novel/release-that-witch.html) and press Search" + Environment.NewLine;
+            log.Text = "Enter full novel url (e.g. https://lightnovels.live/novel/release-that-witch.html) and press Search" + Environment.NewLine;
         }
 
 
@@ -70,7 +70,7 @@ namespace Light_Novel_EPUB
                     string novelImage = novelInfo["novel_image"].ToString();
                     string novelDescription = novelInfo["novel_description"].ToString();
 
-                    string novelChapters = await GetStringContent("https://lightnovels.me/api/chapters?id=" + novelId + "&index=1&limit=15000");
+                    string novelChapters = await GetStringContent("https://lightnovels.live/api/chapters?id=" + novelId + "&index=1&limit=15000");
 
                     JObject novelChaptersJson = JObject.Parse(novelChapters);
 
@@ -82,9 +82,9 @@ namespace Light_Novel_EPUB
                     totalCount.Text = novelChaptersArray.Count.ToString();
 
                     if (novelImage != "")
-                        coverImage.ImageLocation = "https://lightnovels.me" + novelImage;
+                        coverImage.ImageLocation = "https://lightnovels.live" + novelImage;
                     else
-                        coverImage.ImageLocation = "https://lightnovels.me/uploads/thumbs/lightnovel-placeholder.jpg";
+                        coverImage.ImageLocation = "https://lightnovels.live/uploads/thumbs/lightnovel-placeholder.jpg";
 
                     saveEpub.Enabled = true;
 
@@ -393,7 +393,7 @@ namespace Light_Novel_EPUB
 
             try
             {
-                string novelChapterPage = await GetStringContent("https://lightnovels.me" + token["slug"]);
+                string novelChapterPage = await GetStringContent("https://lightnovels.live" + token["slug"]);
 
                 int novelChapterContentStart = novelChapterPage.IndexOf("<div class=\"chapter-content\">");
                 int novelChapterContentEnd = novelChapterPage.IndexOf("</div><p class", novelChapterContentStart);
